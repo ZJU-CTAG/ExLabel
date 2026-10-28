@@ -1,0 +1,24 @@
+# ExLabel Model Configuration
+# Define LLM and Embedder configurations separately for flexible combinations
+
+llms:
+  deepseek-chat:
+    model_name: 'deepseek/deepseek-v3.2-exp'
+    base_url: 'https://openrouter.ai/api/v1'
+
+  gpt-4o:
+    model_name: 'gpt-4o-2024-11-20'
+    base_url: 'https://xiaoai.plus/v1'
+
+  deepseek-v4-flash:
+    model_name: 'deepseek-v4-flash'
+    base_url: 'http://localhost:8888/v1'
+
+embedders:
+  qwen3-embedding-8b:
+    model_name: 'Qwen/Qwen3-Embedding-8B'
+    base_url: 'https://api.siliconflow.cn/v1/embeddings'
+
+  qwen3-embedding-8b-local:
+    model_name: 'qwen3_embedding_8b'
+    base_url: 'http://localhost:10005/v1/embeddings'
